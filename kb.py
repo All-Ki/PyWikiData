@@ -67,9 +67,9 @@ Properties (&prop)  :
 """
 import pywikibot
 
-shit_to_remove=[
-"}","{","]","[",
-]
+# shit_to_remove=[
+# "}","{","]","[",
+# ]
 
 def do(word,target):
 	site = pywikibot.Site('en', 'wikipedia')  # any site will work, this is just an example
@@ -85,8 +85,8 @@ def do(word,target):
 	
 	#####TEXT CLEANUP######
 	# pagetext = re.sub('<.*>', '', pagetext)
-	for  item in shit_to_remove :
-		pagetext=pagetext.replace(item,'')
+	# for  item in shit_to_remove :
+		# pagetext=pagetext.replace(item,'')
 	# pagetext=pagetext.replace("\n","<br>")
 	########################
 
